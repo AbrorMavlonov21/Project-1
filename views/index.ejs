@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <a href="/state">State</a>
+    <a href="/region">Region</a>
+    <a href="/district">District</a>
+    <a href="/register">Registration</a>
+    <a href="/login">Login</a>
+
+
+    <h1>Users</h1>
+
+    <ol>
+      <% data.forEach(function(users) { %>
+      <li>login: <%= users.login %>, districtId: <%= users.districtId %>, address: <%= users.address %></li>
+      <% }) %>
+    </ol>
+  </body>
+</html>

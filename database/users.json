@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "login": "test",
+        "password": "test",
+        "districtId": 1,
+        "address": "najot ta'lim mahalla 7-uy"
+    },
+    {
+        "login": "abror",
+        "password": "$2b$10$N0Oe0Q2nRYbMhQFXA9t/MO/4mmoJ1R81U32KTiiHC4F67jTblRBE.",
+        "districtId": "1",
+        "address": "Toshkent",
+        "id": "5ffddc83-bbd4-4da0-8d49-f429e8866433"
+    }
+]

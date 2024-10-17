@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+    <a href="/">Users</a>
+    <a href="/state">State</a>
+    <a href="/district">District</a>
+    <a href="/register">Registration</a>
+    <a href="/login">Login</a>
+
+    <h1>Register Your Region</h1>
+
+    <form action="/api/region/createRegions" method="post">
+        <input type="text" placeholder="name" required name="name" />
+        <input type="text" placeholder="stateId" required name="stateId" />
+        <button type="submit">Submit</button>
+    </form>
+
+        <h1>Delet by ID</h1>
+        
+        <form action="/api/region/deleteRegions" method="post">
+            <input type="text" placeholder="Enter Region ID to delete" required name="id" />
+            <button type="submit">Delete</button>
+        </form>
+
+            <h1>Regions</h1>
+            
+            <ol>
+                <% data.forEach(function(regions) { %>
+                    <li>name: <%= regions.name %>, stateId: <%= regions.stateId %>
+                    </li>
+                    <% }) %>
+            </ol>
+</body>
+
+</html>

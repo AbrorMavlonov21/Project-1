@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Tashkent",
+        "stateId": 1
+    },
+    {
+        "name": "Fargona",
+        "stateId": "2",
+        "id": 3
+    }
+]
